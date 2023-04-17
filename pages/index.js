@@ -31,10 +31,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Home</h1>
-        <div className={styles.signup}>
-          <button onClick={() => signIn()}>Sign in</button>
+        <div className="p-5 rounded-md">
+          <h1 className="text-2xl font-bold text-black">Home</h1>
         </div>
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4"
+          type="button"
+          onClick={() => signIn()}
+        >
+          Sign in
+        </button>
       </main>
     </div>
   );
